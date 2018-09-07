@@ -1,5 +1,6 @@
 # COMP9331
 Networking
+
 # Instant_Messaging_Application
 
 1. Project specification:
@@ -63,3 +64,9 @@ The major functions of this server are:
 ● Blacklisting: User A can block the other user say B. B will not be informed A’s login or logout status report. B cannot send messages to A.
 
 ● Timeout: Eject a client from the server. During a specific time period, if User A does not send any data to the server, The server will log this user out. There are two ways to delivery Timeout function. Firstly, a timeout threading is opened for checking the inactivity user when there is no activity socket in the select module.In the imported select module, there is a fourth parameter which is used a Timeout. Secondly another Timeout function is also call to periodically check the inactivity users when there are activities in the server socket.
+
+6. Reference :
+
+● https://docs.python.org/3/library/select.html
+
+● http://www.bogotobogo.com/python/python_network_programming_tcp_serve r_client_chat_server_chat_client_select.php
